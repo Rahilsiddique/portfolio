@@ -1,0 +1,37 @@
+.workSection {
+  flex-grow: 1;
+  display: grid;
+  height: calc(100vh - 156px);
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  position: absolute;
+}
+
+.projectImage,
+.projectTitle,
+.projectDescription,
+.projectNav {
+  height: 100%;
+  position: relative;
+}
+
+.projectDescription,
+.projectNav {
+  border-left: 1px solid rgb(255, 255, 255, 0.1);
+}
+
+.projectTitle,
+.projectNav {
+  border-top: 1px solid rgb(255, 255, 255, 0.1);
+}
+
+.projectNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.projectNav:nth-child(2) {
+  border-left: 1px solid rgb(255, 255, 255, 0.1);
+}

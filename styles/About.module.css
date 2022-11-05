@@ -1,0 +1,54 @@
+.aboutBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: calc(100vh - 155px);
+  padding-bottom: 150px;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+.flexBody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.name {
+  font-size: 5rem;
+  font-weight: 700;
+  text-shadow: -5px 5px rebeccapurple;
+}
+.description {
+  font-weight: 400;
+  font-size: 2rem;
+}
+.aboutImg {
+  height: 500px;
+  width: 500px;
+  overflow: hidden;
+}
+@media all and (max-width: 1000px) {
+  .aboutBody {
+    padding-top: 155px;
+    padding-bottom: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .flexBody {
+    justify-content: center;
+    align-items: center;
+  }
+  .mobileSocials {
+    padding-top: 10px;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .description {
+    text-align: center;
+    padding: 2rem 0;
+  }
+}

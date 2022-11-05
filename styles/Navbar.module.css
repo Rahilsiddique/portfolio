@@ -1,0 +1,44 @@
+.navBody {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+}
+.navLogoSection,
+.navLinkSection,
+.navSocialSection,
+.navResumeSection {
+  padding: 3rem 2rem;
+  display: flex;
+  gap: 2rem;
+  border-left: 1px solid rgb(255, 255, 255, 0.1);
+  align-items: center;
+  justify-content: center;
+}
+
+.navLogoSection,
+.navLinkSection {
+  flex-basis: calc(100% / 3);
+}
+
+.navSocialSection,
+.navResumeSection {
+  flex-grow: 1;
+}
+
+.navLinkSection > a,
+.navResumeSection {
+  font-weight: 400;
+  font-size: larger;
+}
+
+.navLogoSection {
+  justify-content: flex-start;
+}
+
+.navLinkSection {
+  gap: 6rem;
+}
+
+.navSocialSection {
+  gap: 3rem;
+}
