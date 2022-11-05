@@ -30,6 +30,10 @@
   width: 500px;
   overflow: hidden;
 }
+.aboutLinks,
+.aboutResume {
+  display: none;
+}
 @media all and (max-width: 1000px) {
   .aboutBody {
     justify-content: center;
@@ -65,6 +69,7 @@
     gap: 3rem;
   }
   .aboutResume {
+    display: block;
     border: 1px solid rebeccapurple;
     font-size: 1.5rem;
     font-weight: 600;
