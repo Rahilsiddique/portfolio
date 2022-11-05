@@ -5,7 +5,7 @@ import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 import styles from "../styles/About.module.css";
 
 const About = () => {
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState();
 
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
