@@ -22,13 +22,13 @@ const Navbar = () => {
         </Link>
       </div>
       <div className={styles.navSocialSection}>
-        <a href="">
+        <a href="https://github.com/Rahilsiddique/">
           <FiGithub size={30} className={styles.FiGithub} />
         </a>
-        <a href="">
+        <a href="https://www.linkedin.com/in/rahilsiddique/">
           <FiLinkedin size={30} className={styles.FiLinkedin} />
         </a>
-        <a href="">
+        <a href="https://twitter.com/Rahil1900">
           <FiTwitter size={30} className={styles.FiTwitter} />
         </a>
       </div>
