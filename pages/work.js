@@ -1,6 +1,6 @@
 import React from "react";
 import WorkSection from "../components/WorkSection";
-import { workSectionInfo } from "../pages/constants/workSectionInfo";
+import { workSectionInfo } from "../components/constants/workSectionInfo";
 
 const Work = () => {
   console.log(workSectionInfo);

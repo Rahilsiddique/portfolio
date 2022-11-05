@@ -1,4 +1,3 @@
-import resumeBuilderProject from "../../assets/images/resumeBuilderProject.png";
 import space1 from "../../assets/images/space1.jpg";
 import space2 from "../../assets/images/space2.jpg";
 export const workSectionInfo = [
@@ -8,8 +7,8 @@ export const workSectionInfo = [
     title: "Resume Builder",
     links: [
       "https://github.com/Rahilsiddique/resume-builder",
-      "http://resume-builder-two-xi.vercel.app/"
-    ]
+      "http://resume-builder-two-xi.vercel.app/",
+    ],
   },
   {
     img: space1,
@@ -17,8 +16,8 @@ export const workSectionInfo = [
     title: "codeAck",
     links: [
       "https://github.com/Rahilsiddique/resume-builder",
-      "http://resume-builder-two-xi.vercel.app/"
-    ]
+      "http://resume-builder-two-xi.vercel.app/",
+    ],
   },
   {
     img: space2,
@@ -26,7 +25,7 @@ export const workSectionInfo = [
     title: "inshorts clone",
     links: [
       "https://github.com/Rahilsiddique/resume-builder",
-      "http://resume-builder-two-xi.vercel.app/"
-    ]
-  }
+      "http://resume-builder-two-xi.vercel.app/",
+    ],
+  },
 ];
