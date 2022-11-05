@@ -6,9 +6,7 @@ const Work = () => {
   console.log(workSectionInfo);
   return (
     <div>
-      {workSectionInfo.map((info) => {
-        return <WorkSection {...info} />;
-      })}
+      <WorkSection slidesInfo={workSectionInfo} />
     </div>
   );
 };

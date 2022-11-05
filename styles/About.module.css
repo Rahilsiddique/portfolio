@@ -9,6 +9,7 @@
   padding: 0 2rem;
 }
 .flexBody {
+  flex-direction: column;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,7 +19,7 @@
 .name {
   font-size: 5rem;
   font-weight: 700;
-  text-shadow: -5px 5px rebeccapurple;
+  text-shadow: -6px 6px rebeccapurple;
 }
 .description {
   font-weight: 400;
@@ -31,11 +32,17 @@
 }
 @media all and (max-width: 1000px) {
   .aboutBody {
-    padding-top: 155px;
-    padding-bottom: 0;
     justify-content: center;
     align-items: center;
     display: flex;
+    padding: 40px;
+  }
+  .name {
+    font-size: 2rem;
+  }
+  .description {
+    font-size: 1.5rem;
+    padding: 0;
   }
   .flexBody {
     justify-content: center;
@@ -50,5 +57,21 @@
   .description {
     text-align: center;
     padding: 2rem 0;
+  }
+  .aboutLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .aboutResume {
+    border: 1px solid rebeccapurple;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    background-color: rebeccapurple;
+    color: black;
+    border-radius: 2rem;
   }
 }

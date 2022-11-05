@@ -42,3 +42,52 @@
 .navSocialSection {
   gap: 3rem;
 }
+
+.navLogoSection > .BiBowlingBall {
+  cursor: pointer;
+}
+
+.navLinks {
+  transition: all 0.3s ease-out;
+}
+.navLinks:hover {
+  color: rebeccapurple;
+}
+
+.FiGithub,
+.FiLinkedin,
+.FiTwitter {
+  transition: all 0.3s ease-out;
+}
+
+.FiGithub:hover,
+.FiLinkedin:hover,
+.FiTwitter:hover {
+  transform: scale(1.25);
+}
+
+.navResumeSection {
+  cursor: pointer;
+}
+.navResumeSection:hover {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+@media screen and (max-width: 900px) {
+  .navLogoSection,
+  .navSocialSection,
+  .navResumeSection {
+    display: none;
+  }
+  .navBody {
+    display: flex;
+    justify-content: center;
+    min-width: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .navLinkSection {
+    border-right: 1px solid rgb(255, 255, 255, 0.1);
+  }
+}
