@@ -5,7 +5,7 @@ import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 import styles from "../styles/About.module.css";
 
 const About = () => {
-  const [width, setWidth] = useState();
+  const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
@@ -23,13 +23,13 @@ const About = () => {
         {width <= 900 ? (
           <>
             <div className={styles.aboutLinks}>
-              <a href="">
+              <a href="https://github.com/Rahilsiddique/">
                 <FiGithub size={40} className={styles.FiGithub} />
               </a>
-              <a href="">
+              <a href="https://www.linkedin.com/in/rahilsiddique/">
                 <FiLinkedin size={40} className={styles.FiLinkedin} />
               </a>
-              <a href="">
+              <a href="https://twitter.com/Rahil1900">
                 <FiTwitter size={40} className={styles.FiTwitter} />
               </a>
             </div>
