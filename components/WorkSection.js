@@ -41,13 +41,13 @@ const WorkSection = ({ slidesInfo }) => {
           {slidesInfo[currentIndex].links.map((link, index) => {
             if (index === 1) {
               return (
-                <Link href={`${link}`}>
+                <Link href={`${link}`} key={index}>
                   <FaExternalLinkAlt className={styles.projectLiveLink} />
                 </Link>
               );
             }
             return (
-              <Link href={`${link}`}>
+              <Link href={`${link}`} key={index}>
                 <FaGithubAlt className={styles.projectGithubLink} />
               </Link>
             );
