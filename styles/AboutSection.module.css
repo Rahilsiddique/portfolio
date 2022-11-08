@@ -1,0 +1,67 @@
+.aboutWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.aboutEdu,
+.aboutSkills,
+.aboutExp {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  height: calc(100vh - 155px);
+}
+
+.aboutSkills {
+  border: none;
+}
+
+.education,
+.skills,
+.experience {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 2rem;
+  font-weight: 500;
+  text-shadow: 3px 3px rebeccapurple;
+}
+
+.educationContent {
+  padding: 10px;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}
+
+/* experience style for component in Experience.js */
+.exp1H {
+  padding: 5px 1rem;
+  font-size: 1.4rem;
+  text-decoration-line: underline;
+  text-decoration-color: rebeccapurple;
+}
+.exp1C {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.duration {
+  font-size: 0.8rem;
+}
+
+/* skills style for component  */
+.skillsBox {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill {
+  margin: 1rem;
+  border: 2px solid rebeccapurple;
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 4px 4px purple;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.skill:hover {
+  box-shadow: none;
+}

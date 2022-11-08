@@ -1,27 +1,33 @@
 import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
-import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
-import styles from "../styles/About.module.css";
+import styles from "../styles/AboutSection.module.css";
+import Experience from "../components/Experience";
+import { exp } from "../components/constants/experienceInfo.js";
+import Skills from "../components/Skills";
 
 const About = () => {
   return (
-    <div className={styles.aboutBody}>
-      <div className={styles.flexBody}>
-        <div className={styles.name}>Rahil Siddique</div>
-        <div className={styles.description}>Student and Developer</div>
-        <div className={styles.aboutLinks}>
-          <a href="https://github.com/Rahilsiddique/">
-            <FiGithub size={40} className={styles.FiGithub} />
-          </a>
-          <a href="https://www.linkedin.com/in/rahilsiddique/">
-            <FiLinkedin size={40} className={styles.FiLinkedin} />
-          </a>
-          <a href="https://twitter.com/Rahil1900">
-            <FiTwitter size={40} className={styles.FiTwitter} />
-          </a>
+    <div className={styles.aboutWrapper}>
+      <div className={styles.aboutEdu}>
+        <div className={styles.education}>Education</div>
+        <div className={styles.educationContent}>
+          Computer Science undergrad
         </div>
-        <div className={styles.aboutResume}>Resume</div>
+      </div>
+      <div className={styles.aboutExp}>
+        <div className={styles.experience}>Experience</div>
+        <div className={styles.experienceContent}>
+          <div className={styles.experience1}>
+            {exp.map((e) => (
+              <Experience {...e} />
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className={styles.aboutSkills}>
+        <div className={styles.skills}>Skills</div>
+        <div className={styles.skillsContent}>
+          <Skills />
+        </div>
       </div>
     </div>
   );

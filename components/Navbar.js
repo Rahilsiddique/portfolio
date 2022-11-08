@@ -8,7 +8,9 @@ const Navbar = () => {
   return (
     <div className={styles.navBody}>
       <div className={styles.navLogoSection}>
-        <BiBowlingBall size={50} className={styles.BiBowlingBall} />
+        <Link href="/">
+          <BiBowlingBall size={50} className={styles.BiBowlingBall} />
+        </Link>
       </div>
       <div className={styles.navLinkSection}>
         <Link href="/about" className={styles.navLinks}>
