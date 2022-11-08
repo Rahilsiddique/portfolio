@@ -18,7 +18,7 @@ const About = () => {
         <div className={styles.experienceContent}>
           <div className={styles.experience1}>
             {exp.map((e, index) => (
-              <Experience {...e} {...index} />
+              <Experience {...e} key={index} />
             ))}
           </div>
         </div>
