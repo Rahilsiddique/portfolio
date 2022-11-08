@@ -17,8 +17,8 @@ const About = () => {
         <div className={styles.experience}>Experience</div>
         <div className={styles.experienceContent}>
           <div className={styles.experience1}>
-            {exp.map((e) => (
-              <Experience {...e} />
+            {exp.map((e,index) => (
+              <Experience {...e,index} />
             ))}
           </div>
         </div>

@@ -5,8 +5,10 @@ import styles from "../styles/AboutSection.module.css";
 const Skills = () => {
   return (
     <div className={styles.skillsBox}>
-      {skills.map((e) => (
-        <div className={styles.skill}>{e}</div>
+      {skills.map((e, index) => (
+        <div className={styles.skill} key={index}>
+          {e}
+        </div>
       ))}
     </div>
   );
