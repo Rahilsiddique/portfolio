@@ -8,9 +8,11 @@ const About = () => {
   return (
     <div className={styles.aboutWrapper}>
       <div className={styles.aboutEdu}>
-        <div className={styles.education}>Education</div>
+        <div className={styles.education}>About</div>
         <div className={styles.educationContent}>
-          Computer Science undergrad
+          Hello, my name is{" "}
+          <span className={styles.AboutSectionName}>Rahil Siddique</span>,
+          developer from india, I like to develop stuff
         </div>
       </div>
       <div className={styles.aboutExp}>

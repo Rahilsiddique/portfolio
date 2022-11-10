@@ -30,6 +30,13 @@
   letter-spacing: 2px;
   font-size: 1.5rem;
 }
+.AboutSectionName {
+  transition: 0.3s;
+}
+.AboutSectionName:hover {
+  text-shadow: 2px 2px rebeccapurple;
+  cursor: pointer;
+}
 
 /* experience style for component in Experience.js */
 .exp1H {
@@ -64,4 +71,17 @@
 }
 .skill:hover {
   box-shadow: none;
+}
+
+@media screen and (max-width: 900px) {
+  .aboutWrapper {
+    grid-template-columns: 1fr;
+    height: 100vh;
+  }
+  .aboutEdu,
+  .aboutSkills,
+  .aboutExp {
+    height: auto;
+    padding-bottom: 155px;
+  }
 }
