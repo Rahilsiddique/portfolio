@@ -54,6 +54,7 @@
 .projectNavLeft:hover {
   background-color: rgba(255, 255, 255, 0.02);
 }
+
 .projectNavRight:hover {
   background-color: rgba(255, 255, 255, 0.02);
 }
@@ -63,6 +64,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .projectTitle {
@@ -107,13 +109,25 @@
     display: flex;
     flex-direction: column;
   }
+
   .projectLeftTitle {
     font-size: 1.5rem;
   }
+
   .projectNav {
     height: 20%;
   }
+
   .projectImage {
     height: 100%;
+  }
+
+  .projectDescription,
+  .projectTitle {
+    height: auto;
+  }
+
+  .projectTitle {
+    padding: 20px 10px;
   }
 }
