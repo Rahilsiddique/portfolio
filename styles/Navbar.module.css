@@ -3,6 +3,7 @@
   width: 100%;
   border-bottom: 1px solid rgb(255, 255, 255, 0.1);
 }
+
 .navLogoSection,
 .navLinkSection,
 .navSocialSection,
@@ -25,7 +26,7 @@
   flex-grow: 1;
 }
 
-.navLinkSection > a,
+.navLinkSection>a,
 .navResumeSection {
   font-weight: 400;
   font-size: larger;
@@ -43,13 +44,14 @@
   gap: 3rem;
 }
 
-.navLogoSection > .BiBowlingBall {
+.navLogoSection>.BiBowlingBall {
   cursor: pointer;
 }
 
 .navLinks {
   transition: all 0.3s ease-out;
 }
+
 .navLinks:hover {
   color: rebeccapurple;
 }
@@ -68,17 +70,21 @@
 
 .navResumeSection {
   cursor: pointer;
+  font-size: 2rem;
 }
+
 .navResumeSection:hover {
   background-color: rgba(255, 255, 255, 0.02);
 }
 
 @media screen and (max-width: 900px) {
+
   .navLogoSection,
   .navSocialSection,
   .navResumeSection {
     display: none;
   }
+
   .navBody {
     display: flex;
     justify-content: center;
@@ -88,6 +94,7 @@
     width: 100%;
     background-color: rgb(5, 10, 24);
   }
+
   .navLinkSection {
     border-right: 1px solid rgb(255, 255, 255, 0.1);
   }

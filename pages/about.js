@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div className={styles.aboutWrapper}>
       <div className={styles.aboutEdu}>
-        <div className={styles.education}>About</div>
+        <div className={styles.education}>About🖥️</div>
         <div className={styles.educationContent}>
           Hello, my name is{" "}
           <span className={styles.AboutSectionName}>Rahil Siddique</span>,
@@ -16,17 +16,15 @@ const About = () => {
         </div>
       </div>
       <div className={styles.aboutExp}>
-        <div className={styles.experience}>Experience</div>
+        <div className={styles.experience}>Experience🧑‍💼</div>
         <div className={styles.experienceContent}>
           <div className={styles.experience1}>
-            {exp.map((e, index) => (
-              <Experience {...e} key={index} />
-            ))}
+            {exp.map((e, index) => <Experience {...e} key={index} />)}
           </div>
         </div>
       </div>
       <div className={styles.aboutSkills}>
-        <div className={styles.skills}>Skills</div>
+        <div className={styles.skills}>Skills🦾</div>
         <div className={styles.skillsContent}>
           <Skills />
         </div>

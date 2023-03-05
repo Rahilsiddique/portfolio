@@ -18,7 +18,6 @@ const WorkSection = ({ slidesInfo }) => {
     const newIndex = isFirst ? slidesInfo.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
-  console.log(slidesInfo);
   return (
     <div className={styles.workSection}>
       <div className={styles.projectImage}>

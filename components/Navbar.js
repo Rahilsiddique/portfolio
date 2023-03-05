@@ -34,7 +34,7 @@ const Navbar = () => {
           <FiTwitter size={30} className={styles.FiTwitter} />
         </a>
       </div>
-      <div className={styles.navResumeSection}>Resume</div>
+      <div className={styles.navResumeSection}>🚧</div>
     </div>
   );
 };
